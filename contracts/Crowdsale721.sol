@@ -25,7 +25,7 @@ contract Crowdsale721 is MintingUtility {
   // address where funds are collected
   address public wallet;
 
-  // dynamic price of land
+  // dynamic price of token
   uint256 public startPrice;
 
   // amount of raised money in wei
@@ -38,7 +38,7 @@ contract Crowdsale721 is MintingUtility {
   uint32 public tokenBatchSize_ = 64;
 
   /* 
-    @dev This contract owns the land contract until the ILO is over
+    @dev This contract owns the token contract until the ILO is over
   */
   function Crowdsale721(
     uint256 _startTime, 
@@ -82,7 +82,7 @@ contract Crowdsale721 is MintingUtility {
 
     forwardFunds(); // calls up to refundable crowdsale
 
-    // mint externally on mintable landsale
+    // mint externally on mintable crowdsale
     nftContract_.mint(_beneficiary, _tokenIds);
   }
 

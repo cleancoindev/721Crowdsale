@@ -15,7 +15,7 @@ contract MintingUtility is Pausable {
 
     /*
         @dev Validates the lenght of an input parcel is not over block limit estimation 
-        @param _tokenIds - tile tokens.
+        @param _tokenIds - tokens.
     */
     modifier limitBatchSize(
         uint64[] _tokenIds

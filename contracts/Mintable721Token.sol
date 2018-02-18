@@ -50,7 +50,7 @@ contract Mintable721Token is ERC721Token, MintingUtility {
   /***** TRANSFERS *****/
 
   /*
-    @dev Transfer multiple land tiles at once
+    @dev Transfer multiple tokens at once
     @param _from - Who we are transferring tile from.
     @param _to - beneficiary of tile.
     @param _tokenIds - tokens to transfer.
