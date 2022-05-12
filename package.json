@@ -23,6 +23,6 @@
     "chai-as-promised": "^7.1.1",
     "chai-bignumber": "^2.0.2",
     "lodash": "^4.17.5",
-    "zeppelin-solidity": "^1.6.0"
+    "zeppelin-solidity": "^1.8.0"
   }
 }
